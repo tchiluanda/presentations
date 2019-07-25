@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+      .destaque {background-color: yellow;}
+      .riscado {text-decoration: line-through;}
+      .red {color: crimson;}
+      .small {font-size: 10pt;}
+      .itens {flex: 1 1 50%;}
+      .inverse {background-color: #272822; color: ghostwhite;}
+      .coral {color: lightcoral;}
+      .goldenrod {color: goldenrod;}
+      .links{color : lightcoral; text-decoration: none;}
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle, inverse
+
+# Usando a quarta dimensão: visualização de dados com gráficos animados
+
+.center[Ciclo de Palestras .coral[&#9679;] julho / 2019 <br/> .small[.goldenrod[De servidor para servidor]]]
+
+.center[<img src="lt.gif" width="25px">]
+
+
+---
+
+# A gramática de gráficos
+
+Conceito baseado no trabalho de Leland Wilkinson: *"The Grammar of Graphics"*. 
+
+.center[![](gg.jpg)]
+
+Diversas ferramentas de visualização de dados se baseiam nesse conceito, tais como **ggplot2**, **Vega-Lite/Altair**  e **Tableau**.
+
+---
+
+# A gramática de gráficos
+
+De forma simplificada, a ideia central é de que um gráfico é um .destaque[mapeamento]:
+
+![](map_s_tempo.png)
+
+---
+
+# A gramática de gráficos &mdash; um exemplo simples
+
+<img src="balanco_TD_anotado.PNG" style = "width: 100%;"/>
+
+---
+
+# Animando as coisas...
+
+E se mapeássemos uma das variáveis do dataset para... o TEMPO?
+
+![](map_c_tempo.png)
+
+---
+
+# O espaço-tempo!
+
+.center[![](einstein.gif)]
+
+---
+
+# Como fazer?
+
+Que tal uma ferramenta .riscado[cara, sofisticada, pesada e complexa] gratuita, simples, leve (em mais de um sentido) e ainda por cima... querida .red[&#10084;]?
+
+---
+
+# Como fazer?
+
+Que tal uma ferramenta .riscado[cara, sofisticada, pesada e complexa] gratuita, simples, leve (em mais de um sentido) e ainda por cima... querida .red[&#10084;]?
+
+.center[![](magic.gif)]
+
+---
+
+# (Ah, os anos 90...)
+
+.center[![](tomjerry.gif) ![](mailpen.gif) ![](starwars.gif)
+
+![](geocities.jpg)
+
+![](balloons.gif)]
+
+---
+
+# Animações para visualização de dados
+
+* As animações permitem .red[condensar diversos gráficos] num único objeto. 
+
+* Além disso, muitas vezes ajudam a .red[chamar a atenção] e a .red[dar mais... "dramaticidade"] à informação sendo apresentada, por criar na audiência uma expectativa, um certo suspense a respeito do que vai acontecer logo depois &mdash; reflexão, especulação.
+
+* As pessoas tendem a achar gráficos animados mais .red["divertidos e cativantes"] (<em>Effectiveness of Animation in Trend Visualization</em>, de Robertson et al, <em>Animated Transitions in Statistical Data Graphics</em>, de Heer e Robertson) &mdash; embora outras pessoas achem esses gráficos mais .red["confusos"]. 
+
+* A principal desvantagem é o fato de a retenção de informações específicas ser menor, por ser difícil acompanhar tudo o que está acontecendo no gráfico.
+
+---
+
+# Animações para visualização de dados
+
+Mas...
+
+> "Even though our job is to visualize the data, it is not actually the precise numbers what is going to stick on our readers' minds. Instead, it's kind of the analysis that we've done, the .destaque[story we're telling and how we made them feel], that they'll remember."
+
+>-- Shirley Wu, Visualization Jedi Grandmaster
+
+A perda da precisão e dos detalhes pode ser compensada por meio do uso de .red[recursos visuais], ou por meio de outras .red[visualizações] e .red[histórias de dados] (e, nesse caso, a animação seria justamente o chamariz para a história completa).
+
+---
+
+# Exemplo 1 - o gif
+
+.center[![](caixa_diario.gif)]
+
+---
+
+# Exemplo 1 - o complemento
+
+<img src="caixa_diario1.png" style = "width: 90%;">
+
+---
+
+# Exemplo 1 - o complemento
+
+<img src="caixa_diario.png" style = "width: 90%;">
+
+---
+
+# Exemplo 2 - o gif
+
+.center[<img src="caixa_obrig.gif" style = "width: 70%;">]
+
+---
+
+# Exemplo 2 - o complemento
+
+.center[<img src="caixa_obrig.png" style = "width: 60%;">]
+
+---
+
+# Exemplo 3 - os gifs
+
+<div style="display: flex;">
+<img src = "home_TT_rtn.gif" style = "width: 45%; height: 45%">
+<img src = "home_TT_dpf.gif" style = "width: 45%; height: 45%">
+</div>
+
+---
+
+# Exemplo 3 - o complemento
+
+.center[<a href="https://www.tesourotransparente.gov.br/historias/entendendo-os-graficos-resultado-primario-e-estoque-da-divida-publica-federal" target="blank"><img src="tt.png" style = "width: 60%;"></a>]
+
+---
+
+# Exemplo 4 - o gif
+
+.center[![](home_TT_despesas.gif)]
+
+---
+
+# Exemplo 4 - o gif (repercussão)
+
+.center[<img src="tweet.PNG" style = "height: 500px;">]
+.center[https://twitter.com/MinEconomia/status/1149048156996460545]
+
+---
+
+# Exemplo 4 - outro gif
+
+.center[![](despesas_new.gif)]
+
+---
+
+# Exemplo 4 - um complemento
+
+.center[<img src="slope.png" style = "height: 500px;">]
+
+---
+
+# Exemplo 5 - o gif
+
+.center[![](mapa.gif)]
+
+---
+
+# Exemplo 5 - um complemento
+
+.center[<img src="heatmap.png" style = "height: 500px;">]
+
+---
+
+# Exemplo 5 - mais complementos...
+
+<div style="display: flex; align-items: start; justify-content: space-between;">
+  <img style="width: 48%;" src="heatmap_deitado.png">
+  <img style="width: 48%;" src="heatmap_side.png">
+</div>
+
+---
+
+# Exemplo 5 - ops!
+
+.center[<video src="heatmap1.mp4" autoplay="true" loop="true" muted="true">Só um experimento</video>]
+
+---
+
+# Exemplo 6 - os gifs
+
+.center[![](sazonalidade_5.gif)]
+
+---
+
+# Exemplo 6 - os gifs
+
+.center[![](divida_polar_f.gif)]
+
+---
+
+# Referências e recursos
+
+<strong>Artigos científicos</strong>
+
+* Effectiveness of Animation in Trend Visualization by Robertson et al (https://www.cc.gatech.edu/~stasko/papers/infovis08-anim.pdf)
+
+* Animated Transitions in Statistical Data Graphics by Heer and Robertson (http://vis.berkeley.edu/papers/animated_transitions/2007-AnimatedTransitions-InfoVis.pdf)
+
+* Enhancing Information Visualization with Motion by Bartram (http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.21.5486&rep=rep1&type=pdf)
+
+<strong>Outros</strong>
+
+* Uma ferramenta para construir animações sem necessidade de programação: https://flourish.studio/blog/
+
+* Episódio do podcast <em>Policy Viz</em>, com John Burn-Murdoch, do Financial Times, sobre gráficos animados (embora trate principalmente de um tipo de gráfico animado, as chamadas "corridas de gráfico de barras"): https://policyviz.com/podcast/episode-155-john-burn-murdoch/
+
+---
+
+<strong>Homenagem obrigatória:</strong> o pioneiro!
+
+.center[![](hans.png)]
+
+https://www.ted.com/speakers/hans_rosling
+
+
+---
+
+class: inverse
+
+# Obrigado!
+
+Tiago Maranhão Barreto Pereira
+
+STN / GT-CEAD </br>
+Grupo Técnico de Comunicação Estratégica e Análise de dados
+
+<a class = "links" href = "mailto:gt-cead@tesouro.gov.br" target = "blank">`gt-cead@tesouro.gov.br`</a>
+
+<a class = "links" href = "http://www.tesourotransparente.gov.br" target = "blank">`www.tesourotransparente.gov.br`</a>
+
+<a class = "links" href = "http://tchiluanda.github.io" target = "blank">`tchiluanda.github.io`</a>
+
+.right[Todos os gifs foram feitos em .coral[`R`] com o pacote .coral[`gganimate`]]
+.right[Apresentação feita com .coral[<a class = "links" href = "https://github.com/gnab/remark" target = "blank">`remark.js`</a>]]
+
+
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
