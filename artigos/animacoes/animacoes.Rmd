@@ -1,0 +1,14 @@
+---
+title: "animacoes"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+1. Por que animar?
+2. Por que gif?
+3. Como fazer no R?
+
+> The thing about animation that I love and that is hard about it, is that as a human you are biological trained to notice something in motion. -- Sarah Drasner, Full Stack Radio, episode 82 (Animating the Web with CSS and Javascript, aprox. 3m35s).
