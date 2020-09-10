@@ -12,3 +12,25 @@ knitr::opts_chunk$set(echo = TRUE)
 3. Como fazer no R?
 
 > The thing about animation that I love and that is hard about it, is that as a human you are biological trained to notice something in motion. -- Sarah Drasner, Full Stack Radio, episode 82 (Animating the Web with CSS and Javascript, aprox. 3m35s).
+
+Citar Policy Viz. Ver a apresentação dele. Podcast com JBM. 
+
+Artigos
+https://medium.com/@FisherDanyel/effectiveness-of-animation-in-trend-visualization-ten-years-later-e2f52b433526
+https://www.cc.gatech.edu/~stasko/papers/infovis08-anim.pdf
+
+Resumo JBM: They found a paradox: people were less accurate at reading values off animated charts, but they enjoyed the experience much more than static charts.
+(https://twitter.com/jburnmurdoch/status/1140957123364474880)
+
+• Their strengths & weaknesses
+• The aspects of a dataset & narrative that are best suited to them
+• What academic research tells us about why they’re popular
+
+
+## 3. Como fazer no R?
+
+https://github.com/ropenscilabs/learngganimate
+
+https://medium.com/the-die-is-forecast/using-gganimate-with-complex-panel-data-visualizing-coupcast-risk-forecasts-over-time-c98b0d6d7f1d
+
+https://www.r-bloggers.com/how-to-build-animated-bar-plots-using-r/
